@@ -3,6 +3,12 @@ What if Skyrim had combat like Chivalry 2? I don't know! We think it sounds cool
 
 ***  
 
+## Project Requirements
+1. Godot Engine 4.5.1 - .NET
+2. Blender 3.0+ (5.0.1 preferred)
+3. Git
+
+
 ## Project Layout  
 
 
