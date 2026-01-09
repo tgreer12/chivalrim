@@ -5,7 +5,6 @@ What if Skyrim had combat like Chivalry 2? I don't know! We think it sounds cool
 
 ## Project Layout  
 
-***  
 
 ### .godot
 don't touch
