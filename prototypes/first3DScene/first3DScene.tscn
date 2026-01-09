@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cltob4rnb0ypr"]
 
 [ext_resource type="Script" uid="uid://b6vyecw0hggla" path="res://prototypes/first3DScene/player_character.gd" id="1_dtlq1"]
-[ext_resource type="Texture2D" uid="uid://btwn7hmc64opy" path="res://icon.svg" id="1_lj30r"]
+[ext_resource type="PackedScene" uid="uid://dgeadvlbr65bh" path="res://assets/opengameart/rtsMedievalProps/rts_props.blend" id="2_dtlq1"]
 
 [node name="MainNode" type="Node3D"]
 
@@ -10,28 +10,5 @@ script = ExtResource("1_dtlq1")
 
 [node name="Camera3D" type="Camera3D" parent="PlayerCharacter"]
 
-[node name="ReferenceGroup" type="Node3D" parent="."]
-
-[node name="RefPX" type="Sprite3D" parent="ReferenceGroup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
-texture = ExtResource("1_lj30r")
-
-[node name="RefNX" type="Sprite3D" parent="ReferenceGroup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
-texture = ExtResource("1_lj30r")
-
-[node name="RefPY" type="Sprite3D" parent="ReferenceGroup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5, 0)
-texture = ExtResource("1_lj30r")
-
-[node name="RefNY" type="Sprite3D" parent="ReferenceGroup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0)
-texture = ExtResource("1_lj30r")
-
-[node name="RefPZ" type="Sprite3D" parent="ReferenceGroup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
-texture = ExtResource("1_lj30r")
-
-[node name="RefNZ" type="Sprite3D" parent="ReferenceGroup"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5)
-texture = ExtResource("1_lj30r")
+[node name="rts_props" parent="." instance=ExtResource("2_dtlq1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -3)
