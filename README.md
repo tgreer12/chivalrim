@@ -19,16 +19,16 @@ all reusable code modules
 
 ### prototypes
 place to organize ad hoc code, assets, scenes, etc by main scene; meant to test concepts and integrations
-- e.g.
+- e.g.  
 
+```tree
+prototypes/
+├── meleeCombatAgainstTarget/
+│   ├── Main.cs
+│   └── meleeCombatAgainstTarget.tscn
+├── orcEnemyAITest/
+│   ├── Main.cs
+│   ├── orcEnemy.tscn
+│   ├── orcEnemySprite.png
+│   └── orcEnemyAITest.tscn
 
-```text
-project-root/
-├── docs/
-│   └── architecture.md
-├── src/
-│   ├── main.py
-│   └── utils.py
-├── tests/
-│   └── test_main.py
-└── README.md
